@@ -142,7 +142,7 @@ input[type="text"]::placeholder {
   content: "\00B0 C";
   position: absolute;
   bottom: 1.1rem;
-  left: 11.4rem;
+  left: 13rem;
   font-size: 1rem;
 }
 
