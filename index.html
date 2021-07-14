@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Source+Sans+Pro:wght@900&display=swap"
+    rel="stylesheet" /> -->
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <header>
+        <form>
+          <div class="form-group">
+            <button class="submit-btn">
+              <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Search city" />
+            <br />
+            <span class="error-msg">No matching location found!</span>
+          </div>
+        </form>
+      </header>
+      <div class="main-weather-display info">
+        <div class="general-info">
+          <p class="condition">MOSTLY SUNNY</p>
+          <h1 class="location">AGARTALA, INDIA</h1>
+          <span class="degrees">25</span>
+        </div>
+        <div class="weather-details info">
+          <p class="feels-like">FEELS LIKE: 30</p>
+          <p class="wind-kph">WIND: 5 KPH</p>
+          <p class="humidity">HUMIDITY: 70</p>
+        </div>
+      </div>
+      <div class="tableFixHead data-table">
+        <table id="myTable">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Humidity</th>
+              <th>Temperature</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
